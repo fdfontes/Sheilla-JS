@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- need to remember what these things at the top mean-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>sheilla theng</title>
+    <link rel="icon" href="/moon-icon.png" />
+    <link rel="stylesheet" href="mystyles.css" />
+  </head>
+  <body>
+    <div class="blocks-root"></div>
+
+    <script type="module">
+      import { buildPage } from "/blocks.js";
+
+      const exampleBlocks = [
+        {
+          type: "hero",
+          title: "My journey",
+          description: "...",
+          heroType: "featured",
+          link: "",
+          call: "",
+          sectionImg: "",
+          imgAlt: "",
+          bgColor: "color-hero"
+        },
+        {
+          type: "one-column",
+          title: "1991",
+          description: "Sheilla is born",
+          link: "",
+          call: "",
+          sectionImg: "/astro-icon.png",
+          imgAlt: "an astronaut floating in space",
+          bgColor: "color-one"
+        }
+      ];
+
+      buildPage(exampleBlocks, "example");
+    </script>
+    <script type="module" src="/blocks.js"></script>
+  </body>
+</html>

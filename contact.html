@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <div class="head-root">
+          <script type="module">
+            import { headBuild } from "/components/Head.js";
+    
+            const pageTitle = "sheilla theng";
+    
+            headBuild(pageTitle);
+          </script>
+        </div>
+      </head>
+  <body>
+    <nav>
+        <div class="page-layout-root"></div>
+        <script type="module">
+          import { buildPage } from "/components/Page-Builder.js";
+
+          const CONTACT_DATA = [
+          {
+            title: "get in touch",
+            description: "let's work together!",
+            button: "send",
+            type: "form",
+            layout: "layout-contact"
+          },
+        ];
+
+        buildPage(CONTACT_DATA);
+
+      </script>
+</body>
+</html>

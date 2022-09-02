@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>sheilla theng</title>
+    <link rel="icon" href="/moon-icon.png" />
+    <link rel="stylesheet" href="mystyles.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="nav-content">
+        <div id="logo"><p>st</p></div>
+        <div id="nav-links">
+          <a href="index.html">home</a>
+          <a href="writing.html">writing</a>
+          <a href="pitch-deck.html">design</a>
+          <a href="contact.html">contact</a>
+        </div>
+      </div>
+    </nav>
+    <div class="layout">
+      <div style="flex: 1;">
+        <div id="contact" class="contact">
+          <div class="contact-left">
+            <h1>get in touch</h1>
+            <p class="contact-text">let's work together!</p>
+          </div>
+          <div class="form-wrapper w-form">
+            <form
+              name="email-form"
+              data-name="Email Form"
+              id="email-form"
+              aria-label="Email Form"
+              netlify
+            >
+              <input type="text" name="name" placeholder="name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="email address"
+                required
+              />
+              <textarea
+                id="message"
+                placeholder="message"
+                maxlength="5000"
+                name="message"
+                required
+              ></textarea>
+              <button type="submit">
+                send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/nav-bar-components.js"></script>
+    <script type="module" src="/footer.js"></script>
+  </body>
+</html>

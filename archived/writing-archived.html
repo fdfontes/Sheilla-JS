@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <div class="head-root">
+      <script type="module">
+        import { headBuild } from "/components/Head.js";
+
+        const pageTitle = "sheilla theng";
+
+        headBuild(pageTitle);
+      </script>
+    </div>
+  </head>
+  <body>
+    <div class="page-layout-root"></div>
+
+    <script type="module">
+      import { buildPage } from "/components/Page-Builder.js";
+
+      const projectSectionsData = [
+        {
+          type: "projects",
+          title: "Screenplays",
+          items: [
+            {
+              title: "Amano",
+              subtitle: "ONE HOUR PILOT / SCI-FI, DRAMA",
+              description:
+                "In a future ruled by corporations, CEO Mirai Amano expects her daughters, Seph and Theo, to live up to the legacy of her name, but this proves difficult when the behemoth she’s built and the world supporting it begins unraveling.",
+              link: ""
+            }
+          ]
+        }
+      ];
+
+      buildPage(projectSectionsData);
+    </script>
+  </body>
+</html>

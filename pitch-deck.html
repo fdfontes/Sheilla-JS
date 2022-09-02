@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <div class="head-root">
+          <script type="module">
+            import { headBuild } from "/components/Head.js";
+    
+            const pageTitle = "sheilla theng";
+    
+            headBuild(pageTitle);
+          </script>
+        </div>
+      </head>
+        <div class="page-layout-root"></div>
+            <script type="module">
+              import { buildPage } from "/components/Page-Builder.js";
+
+              const PITCH_PAGE_DATA = [
+              {
+                type: "hero",
+                title: "design",
+                description: "I design pitch decks, one-pagers, and other pitch materials for film and TV projects.<br /><br />I'm comfortable and have experience with both scripted and nonfiction projects, from supernatural YA series to true crime documentaries. <br /><br />Please reach out for samples, rates, or to learn more.",
+                bgColor: "color-three",
+                layout: "layout-design",
+                link: "contact.html",
+                callType: "button",
+                call: "work with me",
+              },
+            ];
+
+            buildPage(PITCH_PAGE_DATA);
+
+          </script>
+  </body>
+</html>

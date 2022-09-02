@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <div class="head-root">
+      <script type="module">
+        import { headBuild } from "/components/Head.js";
+
+        const pageTitle = "sheilla theng";
+
+        headBuild(pageTitle);
+      </script>
+    </div>
+  </head>
+  <body>
+    <div class="page-layout-root"></div>
+
+    <script type="module">
+      import { buildPage } from "/components/Page-Builder.js";
+
+      const homeBlocksData = [
+        {
+          type: "hero",
+          layout: "home-hero",
+          title: "sheilla theng",
+          description: "is a Cambodian Canadian writer / producer.",
+          bgColor: "color-hero"
+        },
+        {
+          type: "one-column",
+          title: "about me",
+          description:
+            "Sheilla Theng is a writer/producer based out of Toronto. She works at Peacock Alley Entertainment, developing and packaging multiple projects across their slate. Previously, she worked for over 5 years in production on both scripted and unscripted content, including <i>History of the Sitcom</i> (CNN), <i>Fear Thy Roommate</i> (Discovery ID), <i>I Do, Redo</i> (CTV), <i>History Erased</i> (History), <i>Red Button</i> (CBC), the film <i>Love Alaska</i>, as well as numerous short films for the Canadian Film Centre. She has also story produced for two seasons on the popular reality competition series Big Brother Canada (Global). While she’s worn numerous hats, her goal is a career in television writing. Before moving to Toronto, she received her BA in Film Studies with a minor in English from the University of Calgary. In her off-time, Sheilla can be found bingeing television shows, reading indie comics, and wondering if she can afford tickets to Broadway.",
+          sectionImg: "/astro-icon.png",
+          imgAlt: "an astronaut floating in space",
+          bgColor: "color-one"
+        },
+        {
+          type: "two-columns",
+          title: "writing",
+          description: "Screenplays & short stories",
+          link: "writing.html",
+          call: "read more",
+          sectionImg: "/moon-icon.png",
+          imgAlt: "the moon",
+          bgColor: "color-two"
+        },
+        {
+          type: "two-columns",
+          title: "design",
+          description:
+            "Need graphics for a film or TV project in development? I design pitch decks, one-pagers, and other pitch materials!",
+          link: "pitch-deck.html",
+          call: "learn more",
+          sectionImg: "/stars-icon.png",
+          imgAlt: "the stars",
+          bgColor: "color-three"
+        }
+      ];
+
+      buildPage(homeBlocksData);
+    </script>
+    <!-- <script type="module" src="/components/Page-Builder.js"></script>
+    <script type="module" src="/components/Head.js"></script> -->
+  </body>
+</html>
