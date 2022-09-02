@@ -1,9 +1,8 @@
 import { NavBar, NAV_BAR_LINKS_DATA } from "/components/Nav-Bar.js";
 import { Footer, FOOTER_LINKS_DATA } from "/components/Footer.js";
-// import { Head, PAGE_TITLE } from "/components/Head.js";
 import { Contact } from "/components/Contact-Form.js";
 import { Project } from "/components/Projects.js";
-// import { Head } from "/components/Page-Blocks.js";
+import { Hero } from "/components/Hero.js";
 
 // function Layout(pageBlocks) {
 //   return `
@@ -28,30 +27,6 @@ function Layout(pageBlocks) {
 function pageContent(homePage) {
   return `
     <main>${homePage.map(Blocks).join("\n")}</main>
-    `;
-}
-
-function Hero(heroData) {
-  return /* html */ `
-    <div class="${heroData.layout}">
-      <div class="intro-content">
-        <h1>${heroData.title || ""}</h1>
-        ${
-          heroData.description
-            ? `
-            <p class="subheading">${heroData.description}</p>
-          `
-            : ""
-        }
-        ${
-          heroData.link && heroData.call
-            ? `
-              <a href="${heroData.link}"><button type="button">${heroData.call}</button></a>
-              `
-            : ""
-        }
-      </div>
-    </div>
     `;
 }
 
